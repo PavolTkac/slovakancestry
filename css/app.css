@@ -1,0 +1,32 @@
+body {
+  height: 100vh;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+
+.main {
+  background: center / cover no-repeat url('../images/front.png');
+}
+
+.family-tree {
+  background: center / cover no-repeat url('../images/family-tree.jpg');
+}
+
+h1 {
+  display: none;
+}
+
+#signet {
+  display: inline-block;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+#signet img {
+  width: 16rem;
+}
+
+.hidden {
+  display: none !important;
+}
