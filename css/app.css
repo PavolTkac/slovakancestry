@@ -19,12 +19,13 @@ h1 {
 #signet {
   display: inline-block;
   position: fixed;
-  bottom: 2rem;
   right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #signet img {
-  width: 16rem;
+  width: 10rem;
 }
 
 .hidden {
