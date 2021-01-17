@@ -12,6 +12,14 @@ body {
   background: center / cover no-repeat url('../images/family-tree.jpg');
 }
 
+.img-cover {
+  position: relative;
+}
+
+.img-cover img {
+  width: 100%;
+}
+
 h1 {
   display: none;
 }
@@ -45,8 +53,142 @@ h1 {
   filter: blur(2px);
 }
 
+.content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.badge-wrapper {
+  background: center / contain no-repeat url('../images/stuha.svg');
+  /* width: 13vw;
+  height: 7vw; */
+  width: 22vh;
+  height: 11vh;
+}
+
+/* .badge-wrapper::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: all 0.3s;
+  z-index: -1;
+} */
+
+.badge-wrapper:hover::before,
+.badge-wrapper:focus::before {
+  background-color: yellow;
+  transition: all 0.3s;
+}
+
+.img-cover {
+  height: 100vh;
+}
+
+.badge-wrapper img {
+  width: initial !important;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  /* top: 15%; */
+  top: 2vh;
+}
+
+.badge-wrapper p {
+  text-align: center;
+}
+
+/* hlavny obrazok */
+.badge-img-main {
+  position: absolute;
+  z-index: 100;
+  bottom: 4.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.badge-img-main img {
+  height: 5vh;
+  top: 1.5vh;
+}
+
+/* frame */
+.badge-img-frame {
+  position: absolute;
+  z-index: 100;
+  bottom: 43%;
+  left: 23.5%;
+  transform: translateX(-50%);
+}
+
+.badge-img-frame img {
+  height: 5.5vh;
+  top: 1vh;
+}
+
+/* text1 */
+.badge-img-text1 {
+  position: absolute;
+  z-index: 100;
+  bottom: 43%;
+  right: 23.5%;
+  transform: translateX(50%);
+}
+
+/* folder */
+.badge-img-folder {
+  position: absolute;
+  z-index: 100;
+  bottom: 57.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.badge-img-folder img {
+  height: 6vh;
+  top: 1vh;
+}
+
+/* trunk */
+.badge-img-trunk {
+  position: absolute;
+  z-index: 100;
+  bottom: 57.5%;
+  left: 11%;
+  transform: translateX(-50%);
+}
+
+.badge-img-trunk img {
+  height: 7vh;
+  top: 0.5vh;
+}
+
+/* ring */
+.badge-img-ring {
+  position: absolute;
+  z-index: 100;
+  bottom: 57.5%;
+  right: 11%;
+  transform: translateX(50%);
+}
+
+.badge-img-ring img {
+  height: 8vh;
+  top: 1vh;
+}
+
+/* helpers */
 .hidden {
   display: none !important;
+}
+
+.shown {
+  display: block !important;
 }
 
 @keyframes pulse {
