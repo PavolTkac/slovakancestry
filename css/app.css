@@ -207,3 +207,28 @@ h1 {
     box-shadow: 0 0 0 0 rgba(127, 57, 20, 0);
   }
 }
+
+@media (max-width: 1024px) {
+  .badge-img-trunk {
+    left: 23.5%;
+    bottom: 75%;
+  }
+
+  .badge-img-ring {
+    right: 23.5%;
+    bottom: 75%;
+  }
+
+  .badge-img-folder {
+    bottom: 62.5%;
+  }
+
+  .badge-img-frame,
+  .badge-img-text1 {
+    bottom: 47.5%;
+  }
+
+  .badge-img-main {
+    bottom: 15%;
+  }
+}
