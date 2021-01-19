@@ -123,7 +123,7 @@ h1 {
 .badge-img-frame {
   position: absolute;
   z-index: 100;
-  bottom: 43%;
+  bottom: 43.5%;
   left: 23.5%;
   transform: translateX(-50%);
 }
@@ -137,8 +137,8 @@ h1 {
 .badge-img-text1 {
   position: absolute;
   z-index: 100;
-  bottom: 43%;
-  right: 23.5%;
+  bottom: 43.5%;
+  right: 24.5%;
   transform: translateX(50%);
 }
 
@@ -174,8 +174,8 @@ h1 {
 .badge-img-ring {
   position: absolute;
   z-index: 100;
-  bottom: 57.5%;
-  right: 11%;
+  bottom: 58.25%;
+  right: 12%;
   transform: translateX(50%);
 }
 
@@ -186,6 +186,34 @@ h1 {
 
 .badge-wrapper article{
   display: none;
+}
+
+/* xxx */
+.badge-img-xxx {
+  position: absolute;
+  z-index: 100;
+  bottom: 57.5%;
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+.badge-img-xxx img {
+  height: 7vh;
+  top: 0.5vh;
+}
+
+/* yyy */
+.badge-img-yyy {
+  position: absolute;
+  z-index: 100;
+  bottom: 58.25%;
+  right: 30%;
+  transform: translateX(50%);
+}
+
+.badge-img-yyy img {
+  height: 7vh;
+  top: 0.5vh;
 }
 
 /* lightbox */
@@ -251,6 +279,18 @@ h1 {
   }
 }
 
+@media (max-width: 1800px) {
+  .badge-img-xxx {
+    left: 30%;
+    bottom: 75%;
+  }
+
+  .badge-img-yyy {
+    right: 30%;
+    bottom: 75%;
+  }
+}
+
 @media (max-width: 1024px) {
   .badge-img-trunk {
     left: 23.5%;
@@ -268,10 +308,20 @@ h1 {
 
   .badge-img-frame,
   .badge-img-text1 {
-    bottom: 47.5%;
+    bottom: 37.5%;
   }
 
   .badge-img-main {
     bottom: 15%;
+  }
+
+  .badge-img-xxx {
+    left: 20%;
+    bottom: 50%;
+  }
+
+  .badge-img-yyy {
+    right: 20%;
+    bottom: 50%;
   }
 }
