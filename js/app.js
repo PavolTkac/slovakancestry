@@ -1,4 +1,7 @@
 var signet = document.getElementById('signet');
+var bagdes = document.getElementsByClassName('badge-wrapper');
+var lightbox = document.getElementById('lightbox');
+var close = document.getElementById('close');
 
 function changePage() {
   var body = document.getElementsByTagName('body')[0];
@@ -32,3 +35,16 @@ signet.addEventListener('click', function(e) {
   e.preventDefault();
   play();
 })
+
+Array.from(bagdes).forEach(function(bagde) {
+  bagde.addEventListener('click', function() {
+    var article = bagde.querySelector('article');
+    var lightboxContent = lightbox.querySelector('.lightbox-content');
+    lightboxContent.innerHTML = article.innerHTML;
+    lightbox.classList.add('shown');
+  });
+});
+
+close.addEventListener('click', function() {
+  lightbox.classList.remove('shown');
+});
