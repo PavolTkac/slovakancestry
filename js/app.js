@@ -2,26 +2,22 @@ var signet = document.getElementById('signet');
 var bagdes = document.getElementsByClassName('badge-wrapper');
 var lightbox = document.getElementById('lightbox');
 var close = document.getElementById('close');
+var badgeMain = document.getElementsByClassName('badge-img-main');
 
 function changePage() {
   var body = document.getElementsByTagName('body')[0];
-  body.classList.remove('main');
-  body.classList.add('family-tree');
+  body.classList.toggle('main');
+  body.classList.toggle('family-tree');
 
   var imgCover = document.getElementsByClassName('img-cover')[0];
   if (imgCover) {
-    var img = imgCover.getElementsByClassName('main-bg');
-    if (img && img[0]) {
-      img[0].setAttribute('src', './images/family-tree.jpg');
-    }
-
     var content = imgCover.getElementsByClassName('content');
     if (content && content[0]) {
-      content[0].classList.add('shown')
+      content[0].classList.toggle('shown')
     }
   }
 
-  signet.classList.add('hidden');
+  signet.classList.toggle('hidden');
 }
 
 function play() {
@@ -36,15 +32,19 @@ signet.addEventListener('click', function(e) {
   play();
 })
 
-Array.from(bagdes).forEach(function(bagde) {
-  bagde.addEventListener('click', function() {
-    var article = bagde.querySelector('article');
-    var lightboxContent = lightbox.querySelector('.lightbox-content');
-    lightboxContent.innerHTML = article.innerHTML;
-    lightbox.classList.add('shown');
-  });
-});
+// Array.from(bagdes).forEach(function(bagde) {
+//   bagde.addEventListener('click', function() {
+//     var article = bagde.querySelector('article');
+//     var lightboxContent = lightbox.querySelector('.lightbox-content');
+//     lightboxContent.innerHTML = article.innerHTML;
+//     lightbox.classList.add('shown');
+//   });
+// });
 
 close.addEventListener('click', function() {
   lightbox.classList.remove('shown');
 });
+
+if (badgeMain && badgeMain.length > 0) {
+  badgeMain[0].addEventListener('click', changePage);
+}
