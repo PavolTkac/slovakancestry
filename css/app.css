@@ -301,6 +301,11 @@ h1 {
 }
 
 @media (max-width: 1024px) {
+  .badge-wrapper {
+    width: 22vh;
+    height: 11vh;
+  }
+
   .badge-img-trunk {
     left: 23.5%;
     bottom: 75%;
