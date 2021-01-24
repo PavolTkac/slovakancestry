@@ -68,8 +68,8 @@ h1 {
   background-repeat:  no-repeat;
   background-image:  url('../images/stuha.png');
   background-color: rgba(239, 219, 172, 0);
-  width: 22vh;
-  height: 11vh;
+  width: 26vh;
+  height: 13vh;
   transition: all 0.2s ease-in;
   border-radius: 20px;
   cursor: pointer;
@@ -109,7 +109,7 @@ h1 {
 .badge-img-main {
   position: absolute;
   z-index: 100;
-  bottom: 4.5%;
+  bottom: 1%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -123,7 +123,7 @@ h1 {
 .badge-img-frame {
   position: absolute;
   z-index: 100;
-  bottom: 43.5%;
+  bottom: 42.5%;
   left: 23.5%;
   transform: translateX(-50%);
 }
@@ -133,13 +133,18 @@ h1 {
   top: 1vh;
 }
 
-/* text1 */
-.badge-img-text1 {
+/* Person */
+.badge-img-person {
   position: absolute;
   z-index: 100;
-  bottom: 43.5%;
+  bottom: 42%;
   right: 24.5%;
   transform: translateX(50%);
+}
+
+.badge-img-person img {
+  height: 5.5vh;
+  top: 1vh;
 }
 
 /* folder */
@@ -160,7 +165,7 @@ h1 {
 .badge-img-trunk {
   position: absolute;
   z-index: 100;
-  bottom: 57.5%;
+  bottom: 58.5%;
   left: 11%;
   transform: translateX(-50%);
 }
@@ -174,7 +179,7 @@ h1 {
 .badge-img-ring {
   position: absolute;
   z-index: 100;
-  bottom: 58.25%;
+  bottom: 59%;
   right: 12%;
   transform: translateX(50%);
 }
@@ -188,8 +193,8 @@ h1 {
   display: none;
 }
 
-/* xxx */
-.badge-img-xxx {
+/* pergamen */
+.badge-img-pergamen {
   position: absolute;
   z-index: 100;
   bottom: 57.5%;
@@ -197,13 +202,13 @@ h1 {
   transform: translateX(-50%);
 }
 
-.badge-img-xxx img {
+.badge-img-pergamen img {
   height: 7vh;
   top: 0.5vh;
 }
 
-/* yyy */
-.badge-img-yyy {
+/* erb */
+.badge-img-erb {
   position: absolute;
   z-index: 100;
   bottom: 58.25%;
@@ -211,7 +216,7 @@ h1 {
   transform: translateX(50%);
 }
 
-.badge-img-yyy img {
+.badge-img-erb img {
   height: 7vh;
   top: 0.5vh;
 }
@@ -284,12 +289,12 @@ h1 {
 }
 
 @media (max-width: 1800px) {
-  .badge-img-xxx {
+  .badge-img-pergamen {
     left: 30%;
     bottom: 75%;
   }
 
-  .badge-img-yyy {
+  .badge-img-erb {
     right: 30%;
     bottom: 75%;
   }
@@ -311,7 +316,7 @@ h1 {
   }
 
   .badge-img-frame,
-  .badge-img-text1 {
+  .badge-img-person {
     bottom: 37.5%;
   }
 
@@ -319,12 +324,12 @@ h1 {
     bottom: 15%;
   }
 
-  .badge-img-xxx {
+  .badge-img-pergamen {
     left: 20%;
     bottom: 50%;
   }
 
-  .badge-img-yyy {
+  .badge-img-erb {
     right: 20%;
     bottom: 50%;
   }
