@@ -221,6 +221,44 @@ h1 {
   top: 0.5vh;
 }
 
+.frames-wrapper {
+  display: block;
+  text-align: center;
+}
+
+/* frame1 */
+.badge-img-frame1 {
+  z-index: 100;
+  display: inline-block;
+}
+
+.badge-img-frame1 img {
+  height: 6vh;
+  top: 1vh;
+}
+
+/* frame2 */
+.badge-img-frame2 {
+  z-index: 100;
+  display: inline-block;
+}
+
+.badge-img-frame2 img {
+  height: 6vh;
+  top: 1vh;
+}
+
+/* frame3 */
+.badge-img-frame3 {
+  z-index: 100;
+  display: inline-block;
+}
+
+.badge-img-frame3 img {
+  height: 6vh;
+  top: 1vh;
+}
+
 /* lightbox */
 #lightbox {
   display: none;

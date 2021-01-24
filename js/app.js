@@ -3,6 +3,7 @@ var bagdes = document.getElementsByClassName('badge-wrapper');
 var lightbox = document.getElementById('lightbox');
 var close = document.getElementById('close');
 var badgeMain = document.getElementsByClassName('badge-img-main');
+var frameBadge = document.getElementById('frame-badge');
 
 function changePage() {
   var body = document.getElementsByTagName('body')[0];
@@ -45,6 +46,21 @@ close.addEventListener('click', function() {
   lightbox.classList.remove('shown');
 });
 
+lightbox.addEventListener('click', function(e) {
+  if (e.target.id === 'lightbox') {
+    lightbox.classList.remove('shown');
+  }
+});
+
 if (badgeMain && badgeMain.length > 0) {
   badgeMain[0].addEventListener('click', changePage);
+}
+
+if (frameBadge) {
+  frameBadge.addEventListener('click', function() {
+    var article = frameBadge.querySelector('article');
+    var lightboxContent = lightbox.querySelector('.lightbox-content');
+    lightboxContent.innerHTML = article.innerHTML;
+    lightbox.classList.add('shown');
+  });
 }
