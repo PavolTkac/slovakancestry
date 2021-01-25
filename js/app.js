@@ -24,7 +24,7 @@ function changePage() {
 function play() {
   var audio = document.getElementById("audio");
   audio.volume = 0.1;
-  // audio.play();
+  audio.play();
   changePage();
 }
 

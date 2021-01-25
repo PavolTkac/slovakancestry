@@ -276,7 +276,9 @@ h1 {
 #lightbox .wrapper {
   max-width: 700px;
   margin: 0 auto;
-  background-color: #fff;
+  background-image: url('../images/pozadie-min.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   min-height: 300px;
   border-radius: 4px;
   margin: 32px auto;
