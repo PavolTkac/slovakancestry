@@ -7,18 +7,17 @@
 body {
 	background-color: #333;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
+  font-size: 16px;
+  background-image: url('../../images/pozadie-min.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .content {
   max-width: 1000px;
-  background-color: #fff;
   margin: 0 auto;
   padding: 32px;
   min-height: 80vh;
   text-align: center;
-  background-image: url('../../images/pozadie-min.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .header1 {
 	font-family: Arial, Helvetica, sans-serif;
@@ -36,24 +35,39 @@ body {
 }
 .images-wrapper {
   margin-top: 32px;
+  display: flex;
+}
+.col {
+  width: 50%;
+  flex: 0 0 50%;
 }
 img {
   object-fit: cover;
   height: 250px;
+}
+
+@media (max-width: 1024px) {
+  .images-wrapper {
+    flex-direction: column;
+  }
 }
 </style>
 </head>
 
 <body>
 <div class="content">
-  <p>Kozene obaly su rozne. Z mojich skusenosti sa ceny kozenych obalov pohybuju cca 200 Euro/ ks.</p>
+  <p>Kožene obaly sú rôzne. Z mojich skúsenosti sa ceny kožených obalov pohybujú cca 200 Euro/ ks.</p>
   <div class="images-wrapper">
-    <img src="./ABC.JPG" alt="Image"/>
-    <img src="./BCD.JPG" alt="Image"/>
-    <img src="./folder_kozeny.JPG" alt="Image"/>
-    <img src="./kazeta.JPG" alt="Image"/>
-    <img src="./NMB.JPG" alt="Image"/>
-    <img src="./VBN.JPG" alt="Image"/>
+    <div class="col">
+      <img src="./NMB.JPG" alt="Image"/>
+      <img src="./VBN.JPG" alt="Image"/>
+    </div>
+    <div class="col">
+      <img src="./ABC.JPG" alt="Image"/>
+      <img src="./BCD.JPG" alt="Image"/>
+      <img src="./folder_kozeny.JPG" alt="Image"/>
+      <img src="./kazeta.JPG" alt="Image"/>
+    </div>
   </div>
 </div>
 </body>

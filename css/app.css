@@ -111,11 +111,11 @@ h1 {
   z-index: 100;
   bottom: 1%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-45%);
 }
 
 .badge-img-main img {
-  height: 5vh;
+  height: 6vh;
   top: 1.5vh;
 }
 
@@ -129,7 +129,7 @@ h1 {
 }
 
 .badge-img-frame img {
-  height: 5.5vh;
+  height: 7vh;
   top: 1vh;
 }
 
@@ -143,7 +143,7 @@ h1 {
 }
 
 .badge-img-person img {
-  height: 5.5vh;
+  height: 7vh;
   top: 1vh;
 }
 
@@ -157,8 +157,8 @@ h1 {
 }
 
 .badge-img-folder img {
-  height: 6vh;
-  top: 1vh;
+  height: 7.5vh;
+  top: 0.5vh;
 }
 
 /* trunk */
@@ -171,7 +171,7 @@ h1 {
 }
 
 .badge-img-trunk img {
-  height: 7vh;
+  height: 8vh;
   top: 0.5vh;
 }
 
@@ -185,8 +185,8 @@ h1 {
 }
 
 .badge-img-ring img {
-  height: 8vh;
-  top: 1vh;
+  height: 10vh;
+  top: 0.5vh;
 }
 
 .badge-wrapper article{
@@ -203,8 +203,8 @@ h1 {
 }
 
 .badge-img-pergamen img {
-  height: 7vh;
-  top: 0.5vh;
+  height: 12vh;
+  top: -1vh;
 }
 
 /* erb */
@@ -217,8 +217,8 @@ h1 {
 }
 
 .badge-img-erb img {
-  height: 7vh;
-  top: 0.5vh;
+  height: 9vh;
+  top: 0vh;
 }
 
 .frames-wrapper {
@@ -233,7 +233,7 @@ h1 {
 }
 
 .badge-img-frame1 img {
-  height: 6vh;
+  height: 7vh;
   top: 1vh;
 }
 
@@ -244,7 +244,7 @@ h1 {
 }
 
 .badge-img-frame2 img {
-  height: 6vh;
+  height: 7vh;
   top: 1vh;
 }
 
@@ -255,7 +255,7 @@ h1 {
 }
 
 .badge-img-frame3 img {
-  height: 6vh;
+  height: 6.5vh;
   top: 1vh;
 }
 
@@ -342,6 +342,61 @@ h1 {
 }
 
 @media (max-width: 1024px) {
+  .badge-img-trunk img {
+    height: 7vh;
+    top: 0.5vh;
+  }
+
+  .badge-img-pergamen img {
+    height: 11vh;
+    top: -1vh;
+  }
+
+  .badge-img-folder img {
+    height: 6vh;
+    top: 1vh;
+  }
+
+  .badge-img-erb img {
+    height: 7vh;
+    top: 0.5vh;
+  }
+
+  .badge-img-ring img {
+    height: 8vh;
+    top: 1vh;
+  }
+
+  .badge-img-frame img {
+    height: 5.5vh;
+    top: 1vh;
+  }
+
+  .badge-img-person img {
+    height: 5.5vh;
+    top: 1vh;
+  }
+
+  .badge-img-main img {
+    height: 5vh;
+    top: 1.5vh;
+  }
+
+  .badge-img-frame1 img {
+    height: 6vh;
+    top: 1vh;
+  }
+
+  .badge-img-frame2 img {
+    height: 6vh;
+    top: 1vh;
+  }
+
+  .badge-img-frame3 img {
+    height: 6vh;
+    top: 1vh;
+  }
+
   .badge-wrapper {
     width: 22vh;
     height: 11vh;
