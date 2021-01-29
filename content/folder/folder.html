@@ -36,21 +36,24 @@ body {
 .images-wrapper {
   margin-top: 32px;
   display: flex;
+  flex-direction: column;
 }
 .col {
-  width: 50%;
   flex: 0 0 50%;
+  display: flex;
 }
 img {
   object-fit: cover;
   height: 250px;
+  width: calc(33% - 16px);
+  margin: 8px;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .images-wrapper {
     flex-direction: column;
   }
-}
+} */
 </style>
 </head>
 
@@ -59,11 +62,11 @@ img {
   <p>Kožene obaly sú rôzne. Z mojich skúsenosti sa ceny kožených obalov pohybujú cca 200 Euro/ ks.</p>
   <div class="images-wrapper">
     <div class="col">
+      <img src="./ABC.JPG" alt="Image"/>
       <img src="./NMB.JPG" alt="Image"/>
       <img src="./VBN.JPG" alt="Image"/>
     </div>
     <div class="col">
-      <img src="./ABC.JPG" alt="Image"/>
       <img src="./BCD.JPG" alt="Image"/>
       <img src="./folder_kozeny.JPG" alt="Image"/>
       <img src="./kazeta.JPG" alt="Image"/>
